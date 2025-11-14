@@ -3,7 +3,7 @@ function highlightRemoveRows() {
   const tdElements = document.querySelectorAll('td');
   
   tdElements.forEach(td => {
-    if (td.textContent.toLowerCase().includes('remove')) {
+    if (td.textContent.includes('REMOVE')) {
       // Find the parent <tr> element and highlight the entire row
       const row = td.closest('tr');
       if (row) {
