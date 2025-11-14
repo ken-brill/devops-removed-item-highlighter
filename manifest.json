@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Salesforce Devops REMOVED Item Highlighter",
+  "version": "1.2",
+  "description": "Adds red border to table cells containing 'remove' on Salesforce Lightning",
+  "content_scripts": [
+    {
+      "matches": ["*://*.lightning.force.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
